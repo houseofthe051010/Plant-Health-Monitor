@@ -24,9 +24,11 @@ I built this to sample soil health from my garden and this is just a prototype, 
 * 2S 18650 battery-based power supply with a step-down converter
 * No extra Python packages required for the core autonomous work
 
-## Prototype Pictures
+## Proof Pictures
 
-The pictures below show the current prototype version of the ESP32 Plant Health Monitor Rover, including the CAD design, circuit wiring, and real physical build.
+Here is the demo video I have on the robot:
+
+https://www.youtube.com/shorts/W9_TdJyh92A
 
 ### CAD Prototype
 

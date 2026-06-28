@@ -24,6 +24,29 @@ I built this to sample soil health from my garden and this is just a prototype, 
 * 2S 18650 battery-based power supply with a step-down converter
 * No extra Python packages required for the core autonomous work
 
+## Prototype Pictures
+
+The pictures below show the current prototype version of the ESP32 Plant Health Monitor Rover, including the CAD design, circuit wiring, and real physical build.
+
+### CAD Prototype
+
+![CAD Prototype](Pictures/CAD-prototype.png)
+
+The CAD prototype shows the planned rover structure, including the tank-drive chassis and the soil collection mechanism layout.
+
+### Circuit Schematic
+
+![Circuit Schematic](Pictures/CircuitSchematic.png)
+
+The circuit schematic shows how the ESP32 connects to the drivetrain, servo arm system, sensors, and power system.
+
+### Real-Life Prototype
+
+![Real-Life Prototype](Pictures/real-life-prototype.png)
+
+The real-life prototype shows the current physical version of the rover built for testing garden soil sampling, sensor integration, and servo-controlled soil collection.
+
+
 ## Hardware Description
 
 The rover utilizes ESP32 microcontroller. Tank drive is controlled using two PWM outputs, acting as continuous-rotation servos. Soil collection uses five additional PWM outputs to actuate servos of the arm and close the sample chamber.

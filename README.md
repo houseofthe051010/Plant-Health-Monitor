@@ -38,7 +38,7 @@ The CAD prototype shows the planned rover structure, including the tank-drive ch
 
 ### Circuit Schematic
 
-![Circuit Schematic](Pictures/CircuitSchematic.png)
+![Updated Circuit Schematic](Schematics/UpdatedCircuitSchematicV2.png)
 
 The circuit schematic shows how the ESP32 connects to the drivetrain, servo arm system, sensors, and power system.
 

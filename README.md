@@ -176,3 +176,7 @@ The rover is powered from a 2S 18650 battery pack. 2S lithium-ion battery pack p
 * `README.md` - project overview and instructions for setup
 * `CAD` - CAD step files for building it yourself
 * `Pictures` - All pictures of schematic/prototype/cad
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). Copyright (c) 2026 Aditya Verma.

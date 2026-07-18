@@ -194,7 +194,6 @@ Print all of the parts in [`SOURCE CAD/Individual Parts`](SOURCE%20CAD/Individua
 * Soldering iron, solder, heat-shrink tubing or electrical tape, zip ties, and thin 26 AWG or similar hookup wire
 * Multimeter, suitable 2S lithium-ion charger, and basic hand tools
 
-> **Battery safety:** Do not solder directly to bare 18650 cells unless you have the proper equipment and experience. A protected holder or professionally spot-welded, pre-tabbed pack with an appropriate protection/BMS circuit is safer. Never charge the pack through the XL4005; use a charger designed for a 2S lithium-ion pack. Check polarity and output voltage with a multimeter before connecting the ESP32 or servos.
 
 ### Individual Printable Parts
 

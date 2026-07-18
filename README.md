@@ -284,6 +284,7 @@ When you toggle the robot's power button, the autonomous sequence will run autom
 
 ## Repository Structure
 
+* `BOM.csv` - bill of materials for the rover
 * `SOURCE CODE/main.py` - compact autonomous MicroPython firmware
 * `README.md` - project overview and instructions for setup
 * `SOURCE CAD` - CAD step files for building it yourself

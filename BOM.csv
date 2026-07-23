@@ -1,35 +1,35 @@
-Category,Quantity,Part,Specification
-Electronics,1,ESP32 development board,ESP32-WROOM-32 DevKit V1 with 3.3 V logic and GPIO39 analog input
-Actuator,2,Continuous-rotation drivetrain servo,MG996R-class high-torque metal-gear servo modified for continuous rotation
-Actuator,1,Main arm pitch servo,MG996R 180-degree positional high-torque metal-gear servo
-Actuator,5,Micro servo,SG90 9 g positional micro servo; four used and one spare
-Sensor,1,Ambient light sensor,BH1750 I2C digital light sensor module; 3.3 V compatible
-Sensor,1,Environmental sensor,BME280 I2C temperature humidity and pressure sensor module; 3.3 V compatible
-Sensor,1,Ultrasonic distance sensor,HC-SR04 ultrasonic module with 5 V echo level shifting for ESP32
-Sensor,1,Soil electrical conductivity sensor,Analog Soil EC Sensor V1.2 with analog output
-Power,1,Buck converter,XL4005 adjustable DC-DC step-down module set to approximately 6.0 V
-Power,2,Lithium-ion cell,Protected 18650 cell for a 2S 7.4 V nominal battery pack
-Power,1,2S battery holder,Protected two-cell series holder or equivalent protected pre-tabbed 2S pack
-Power,1,Power switch,SPST toggle switch rated for the rover load
-Power,1,2S battery charger,8.4 V lithium-ion charger compatible with the protected 2S pack
-Protection,1,Ultrasonic echo level shifter,Two-resistor voltage divider or bidirectional logic-level shifter for HC-SR04 echo
-Mechanical,5,Ball bearing,608 bearing; 8 mm bore x 22 mm OD x 7 mm width
-Mechanical,As needed,M3 fasteners,M3 machine screws and nuts including 20 mm wheel-retaining screws
-Mechanical,Included with servos,Servo horns and screws,Matching servo horns and M2 self-tapping mounting screws
-Fabricated,1,Base structure,3D print from SOURCE CAD/Individual Parts/base_structure.stl
-Fabricated,2,Drivetrain wheel,3D print from SOURCE CAD/Individual Parts/wheel.stl
-Fabricated,1,Front caster wheel,3D print from SOURCE CAD/Individual Parts/front_caster_wheel.stl
-Fabricated,1,Front wheel hinge,3D print from SOURCE CAD/Individual Parts/front_wheel_hinge.stl
-Fabricated,1,Arm yaw servo holder,3D print from SOURCE CAD/Individual Parts/arm_yaw_servo_holder.stl
-Fabricated,1,Arm yaw horn attachment,3D print from SOURCE CAD/Individual Parts/arm_yaw_servo_horn_attachment.stl
-Fabricated,1,Arm pitch servo holder,3D print from SOURCE CAD/Individual Parts/arm_pitch_servo_holder.stl
-Fabricated,1,Arm pitch horn attachment,3D print from SOURCE CAD/Individual Parts/arm_pitch_servo_horn_attachment.stl
-Fabricated,1,Arm pitch adapter,3D print from SOURCE CAD/Individual Parts/arm_pitch_adapter.stl
-Fabricated,1,Main arm,3D print from SOURCE CAD/Individual Parts/arm.stl
-Fabricated,1,Second-pitch horn attachment,3D print from SOURCE CAD/Individual Parts/Arm_2nd_pitch_Horn_attachment.stl
-Fabricated,1 set,General output attachment,3D print arm_output_attachment_part1.stl and arm_output_attachment_part2.stl
-Fabricated,1,Shovel output attachment,3D print from SOURCE CAD/Individual Parts/arm_output_shovel_attachment.stl
-Fabricated,1,Soil container,3D print from SOURCE CAD/Individual Parts/Soil_container.stl
-Fabricated,1,Soil container lid,3D print from SOURCE CAD/Individual Parts/Soil_container_lid.stl
-Consumable,As needed,Hookup wire,26 AWG stranded copper wire for power and signals
-Consumable,As needed,Assembly consumables,Solder heat-shrink tubing electrical tape zip ties and suitable adhesive
+Category,Quantity,Part,Link,Price
+Electronics,1,ESP32 development board,https://www.aliexpress.us/item/3256812360578716.html,$4.67
+Actuator,2,Continuous-rotation drivetrain servo,https://www.aliexpress.us/item/3256804365417662.html,$9.28 (2-pack)
+Actuator,1,Main arm pitch servo,https://www.aliexpress.us/item/3256804365417662.html,$4.64 used (1 of 2-pack at $9.28)
+Actuator,5,Micro servo,https://www.aliexpress.us/item/3256806107378152.html,$4.95 used (5 at $0.99 each)
+Sensor,1,Ambient light sensor,https://www.aliexpress.us/item/3256809513329235.html,$3.00
+Sensor,1,Environmental sensor,https://www.aliexpress.us/item/3256812547404758.html,$5.85
+Sensor,1,Ultrasonic distance sensor,https://www.aliexpress.us/item/3256810017345486.html,$1.25
+Sensor,1,Soil electrical conductivity sensor,https://www.aliexpress.us/item/3256811685769454.html,$13.29
+Power,1,Buck converter,https://www.aliexpress.us/item/3256806558389509.html,$1.46
+Power,2,Lithium-ion cell,https://www.aliexpress.us/item/3256811867524654.html,$3.35 used (2 of 16-pack at $26.77)
+Power,1,2S battery holder,https://www.aliexpress.us/item/3256809135366720.html,$0.99
+Power,1,Power switch,https://www.aliexpress.us/item/3256807619399290.html,$0.16 used (1 of 10-pack at $1.64)
+Power,1,2S battery charger,https://www.aliexpress.us/item/3256805668198456.html,$0.99
+Protection,1,Ultrasonic echo level shifter,https://www.aliexpress.us/item/3256810490396292.html,$0.24 used (1 of 5-pack at $1.19)
+Mechanical,5,Ball bearing,https://www.aliexpress.us/item/3256805609422387.html,$8.06 (5-pack)
+Mechanical,As needed,M3 fasteners,https://www.aliexpress.us/item/3256809672273859.html,$14.88 assortment kit
+Mechanical,Included with servos,Servo horns and screws,https://www.aliexpress.us/item/3256804365417662.html,$0.00 (included with servos)
+Fabricated,1,Base structure,https://www.aliexpress.us/item/3256806989098121.html,$1.75 estimated (173 g solid PLA)
+Fabricated,2,Drivetrain wheel,https://www.aliexpress.us/item/3256806989098121.html,$2.12 estimated (209 g solid PLA)
+Fabricated,1,Front caster wheel,https://www.aliexpress.us/item/3256806989098121.html,$0.02 estimated (2.4 g solid PLA)
+Fabricated,1,Front wheel hinge,https://www.aliexpress.us/item/3256806989098121.html,$0.06 estimated (5.8 g solid PLA)
+Fabricated,1,Arm yaw servo holder,https://www.aliexpress.us/item/3256806989098121.html,$0.27 estimated (26.2 g solid PLA)
+Fabricated,1,Arm yaw horn attachment,https://www.aliexpress.us/item/3256806989098121.html,$0.03 estimated (2.5 g solid PLA)
+Fabricated,1,Arm pitch servo holder,https://www.aliexpress.us/item/3256806989098121.html,$0.18 estimated (17.8 g solid PLA)
+Fabricated,1,Arm pitch horn attachment,https://www.aliexpress.us/item/3256806989098121.html,$0.17 estimated (16.8 g solid PLA)
+Fabricated,1,Arm pitch adapter,https://www.aliexpress.us/item/3256806989098121.html,$0.03 estimated (2.9 g solid PLA)
+Fabricated,1,Main arm,https://www.aliexpress.us/item/3256806989098121.html,$0.01 estimated (1.3 g solid PLA)
+Fabricated,1,Second-pitch horn attachment,https://www.aliexpress.us/item/3256806989098121.html,$0.07 estimated (6.9 g solid PLA)
+Fabricated,1 set,General output attachment,https://www.aliexpress.us/item/3256806989098121.html,$0.05 estimated (5.0 g solid PLA)
+Fabricated,1,Shovel output attachment,https://www.aliexpress.us/item/3256806989098121.html,$0.02 estimated (2.2 g solid PLA)
+Fabricated,1,Soil container,https://www.aliexpress.us/item/3256806989098121.html,$0.20 estimated (19.5 g solid PLA)
+Fabricated,1,Soil container lid,https://www.aliexpress.us/item/3256806989098121.html,$0.05 estimated (5.3 g solid PLA)
+Consumable,As needed,Hookup wire,https://www.aliexpress.us/item/3256808061834409.html,$4.69 allowance
+Consumable,As needed,Assembly consumables,https://www.aliexpress.us/item/3256805494059216.html,$3.30 allowance

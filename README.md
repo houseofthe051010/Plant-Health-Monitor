@@ -46,42 +46,7 @@ Sensors include a BH1750 light sensor, a BME280 environmental sensor, an HC-SR04
 ## Bill of materials
 
 
-| Category | Quantity | Part | Link | Price |
-|---|---:|---|---|---:|
-| Electronics | 1 | ESP32 development board | [AliExpress](https://www.aliexpress.us/item/3256812360578716.html) | $4.67 |
-| Actuator | 2 | Continuous-rotation drivetrain servo | [AliExpress](https://www.aliexpress.us/item/3256804365417662.html) | $9.28 (2-pack) |
-| Actuator | 1 | Main arm pitch servo | [AliExpress](https://www.aliexpress.us/item/3256804365417662.html) | $4.64 used (1 of 2-pack at $9.28) |
-| Actuator | 5 | Micro servo | [AliExpress](https://www.aliexpress.us/item/3256806107378152.html) | $4.95 used (5 at $0.99 each) |
-| Sensor | 1 | Ambient light sensor | [AliExpress](https://www.aliexpress.us/item/3256809513329235.html) | $3.00 |
-| Sensor | 1 | Environmental sensor | [AliExpress](https://www.aliexpress.us/item/3256812547404758.html) | $5.85 |
-| Sensor | 1 | Ultrasonic distance sensor | [AliExpress](https://www.aliexpress.us/item/3256810017345486.html) | $1.25 |
-| Sensor | 1 | Soil electrical conductivity sensor | [AliExpress](https://www.aliexpress.us/item/3256811685769454.html) | $13.29 |
-| Power | 1 | Buck converter | [AliExpress](https://www.aliexpress.us/item/3256806558389509.html) | $1.46 |
-| Power | 2 | Lithium-ion cell | [AliExpress](https://www.aliexpress.us/item/3256811867524654.html) | $3.35 used (2 of 16-pack at $26.77) |
-| Power | 1 | 2S battery holder | [AliExpress](https://www.aliexpress.us/item/3256809135366720.html) | $0.99 |
-| Power | 1 | Power switch | [AliExpress](https://www.aliexpress.us/item/3256807619399290.html) | $0.16 used (1 of 10-pack at $1.64) |
-| Power | 1 | 2S battery charger | [AliExpress](https://www.aliexpress.us/item/3256805668198456.html) | $0.99 |
-| Protection | 1 | Ultrasonic echo level shifter | [AliExpress](https://www.aliexpress.us/item/3256810490396292.html) | $0.24 used (1 of 5-pack at $1.19) |
-| Mechanical | 5 | Ball bearing | [AliExpress](https://www.aliexpress.us/item/3256805609422387.html) | $8.06 (5-pack) |
-| Mechanical | As needed | M3 fasteners | [AliExpress](https://www.aliexpress.us/item/3256809672273859.html) | $14.88 assortment kit |
-| Mechanical | Included with servos | Servo horns and screws | [AliExpress](https://www.aliexpress.us/item/3256804365417662.html) | $0.00 (included with servos) |
-| Fabricated | 1 | Base structure | [PLA filament](https://www.aliexpress.us/item/3256806989098121.html) | $1.75 estimated (173 g solid PLA) |
-| Fabricated | 2 | Drivetrain wheel | [PLA filament](https://www.aliexpress.us/item/3256806989098121.html) | $2.12 estimated (209 g solid PLA) |
-| Fabricated | 1 | Front caster wheel | [PLA filament](https://www.aliexpress.us/item/3256806989098121.html) | $0.02 estimated (2.4 g solid PLA) |
-| Fabricated | 1 | Front wheel hinge | [PLA filament](https://www.aliexpress.us/item/3256806989098121.html) | $0.06 estimated (5.8 g solid PLA) |
-| Fabricated | 1 | Arm yaw servo holder | [PLA filament](https://www.aliexpress.us/item/3256806989098121.html) | $0.27 estimated (26.2 g solid PLA) |
-| Fabricated | 1 | Arm yaw horn attachment | [PLA filament](https://www.aliexpress.us/item/3256806989098121.html) | $0.03 estimated (2.5 g solid PLA) |
-| Fabricated | 1 | Arm pitch servo holder | [PLA filament](https://www.aliexpress.us/item/3256806989098121.html) | $0.18 estimated (17.8 g solid PLA) |
-| Fabricated | 1 | Arm pitch horn attachment | [PLA filament](https://www.aliexpress.us/item/3256806989098121.html) | $0.17 estimated (16.8 g solid PLA) |
-| Fabricated | 1 | Arm pitch adapter | [PLA filament](https://www.aliexpress.us/item/3256806989098121.html) | $0.03 estimated (2.9 g solid PLA) |
-| Fabricated | 1 | Main arm | [PLA filament](https://www.aliexpress.us/item/3256806989098121.html) | $0.01 estimated (1.3 g solid PLA) |
-| Fabricated | 1 | Second-pitch horn attachment | [PLA filament](https://www.aliexpress.us/item/3256806989098121.html) | $0.07 estimated (6.9 g solid PLA) |
-| Fabricated | 1 set | General output attachment | [PLA filament](https://www.aliexpress.us/item/3256806989098121.html) | $0.05 estimated (5.0 g solid PLA) |
-| Fabricated | 1 | Shovel output attachment | [PLA filament](https://www.aliexpress.us/item/3256806989098121.html) | $0.02 estimated (2.2 g solid PLA) |
-| Fabricated | 1 | Soil container | [PLA filament](https://www.aliexpress.us/item/3256806989098121.html) | $0.20 estimated (19.5 g solid PLA) |
-| Fabricated | 1 | Soil container lid | [PLA filament](https://www.aliexpress.us/item/3256806989098121.html) | $0.05 estimated (5.3 g solid PLA) |
-| Consumable | As needed | Hookup wire | [AliExpress](https://www.aliexpress.us/item/3256808061834409.html) | $4.69 allowance |
-| Consumable | As needed | Assembly consumables | [AliExpress](https://www.aliexpress.us/item/3256805494059216.html) | $3.30 allowance |
+Look at BOM CSV
 
 ## GPIO Mapping (needed for final wiring)
 

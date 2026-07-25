@@ -1,28 +1,20 @@
 # ESP32 Plant Health Monitor Rover
 
-A self-driving ESP32-based soil sampling rover consisting of a tank-drive chassis, a multi-servo soil collector arm, and a small environmental sensors suite. Upon powering on, the rover will run its complete soil sampling routine, do a randomized drive sequence, stop, and idle.
 
-I built this to sample soil health from my garden and this is just a prototype, not the real version yet, I will build another iteration but this is what I have currently.
+I built this to sample soil health from my garden and this is just a prototype, not the real version yet, I will build another iteration but this is what I have currently. It is a fun educational toy to play with though.
 
 ## Features
 
-* Autonomous start-up and work
+* Autonomous
 * Two-servo tank drive
 * Seven servos total
-
   * Two continuous-rotation drive servos
   * Four arm position servos
   * One sample chamber closing servo
-* Smooth servo movement
-* Simultaneous two-servos action
-* Shovel shaking to dump collected soil
-* Random forward, turning, and curved driving segments
-* Autonomous drive stop after the sequence execution
 * Soil electrical conductivity measurement
-* Temperature, humidity, pressure, and light measurements support
-* Front ultrasound distance measurement
-* 2S 18650 battery-based power supply with a step-down converter
-* No extra Python packages required for the core autonomous work
+* Temperature, humidity, pressure, and light measurements
+* Ultrasound distance measurement
+
 
 ## Proof Pictures
 
@@ -34,19 +26,16 @@ https://www.youtube.com/shorts/W9_TdJyh92A
 
 ![CAD Prototype](Pictures/CAD-prototype.png)
 
-The CAD prototype shows the planned rover structure, including the tank-drive chassis and the soil collection mechanism layout.
 
 ### Circuit Schematic
 
 ![Updated Circuit Schematic](Schematics/UpdatedCircuitSchematicV2.png)
 
-The circuit schematic shows how the ESP32 connects to the drivetrain, servo arm system, sensors, and power system.
 
 ### Real-Life Prototype
 
 ![Real-Life Prototype](Pictures/real-life-prototype.png)
 
-The real-life prototype shows the current physical version of the rover built for testing garden soil sampling, sensor integration, and servo-controlled soil collection.
 
 ## Hardware Description
 
@@ -56,7 +45,6 @@ Sensors include a BH1750 light sensor, a BME280 environmental sensor, an HC-SR04
 
 ## Bill of materials
 
-This table matches [BOM.csv](BOM.csv). Prices are AliExpress USD prices checked July 23, 2026, exclude shipping and tax, and may vary by option, account, and region. Multipack rows show the cost for the quantity used by this build. Printed-part prices are solid-volume estimates derived from the checked-in STL geometry using a PLA density of 1.24 g/cm³ and filament priced at $10.14/kg; normal infill can cost less.
 
 | Category | Quantity | Part | Link | Price |
 |---|---:|---|---|---:|
@@ -116,7 +104,7 @@ This table matches [BOM.csv](BOM.csv). Prices are AliExpress USD prices checked 
 
 ### BH1750 Light Sensor
 
-BH1750 detects the ambient light level. Sensor is wired via I2C bus, which is shared with BME280.
+Wired through I2C
 
 | Pin | Connection |
 | --- | ---------- |
@@ -125,9 +113,9 @@ BH1750 detects the ambient light level. Sensor is wired via I2C bus, which is sh
 | SDA | GPIO21     |
 | SCL | GPIO22     |
 
-### BME280 Environmental Sensor
+### BME280 Temp/Humidity/Air Pressure Sensor
 
-BME280 measures temperature, humidity, and air pressure. It is also wired via I2C bus, shared with BME280.
+Wired through I2C
 
 | Pin | Connection |
 | --- | ---------- |
@@ -138,7 +126,7 @@ BME280 measures temperature, humidity, and air pressure. It is also wired via I2
 
 ### HC-SR04 Ultrasonic Sensor
 
-HC-SR04 is used as a front distance sensor for obstacle detection.
+Distance sensor for navigation
 
 | Pin     | Connection   |
 | ------- | ------------ |
@@ -149,7 +137,7 @@ HC-SR04 is used as a front distance sensor for obstacle detection.
 
 ### Analog Soil EC Sensor
 
-Soil Electrical Conductivity sensor is connected to VN/GPIO39 of the ESP32.
+Analog 
 
 | Pin        | Connection  |
 | ---------- | ----------- |
@@ -173,7 +161,7 @@ Seven servos in rover.
 
 ## Power System
 
-The rover is powered from a 2S 18650 battery pack. 2S lithium-ion battery pack provides about 7.4V nominally and 8.4V at full charge. This voltage level is too much for standard 5V servos and ESP32 GPIO pins, so the rover uses an XL4005 buck converter to step-down the voltage.
+2S battery pack charged using 2S charger, with XL4005 for buck conversion
 
 ```text
 2S 18650 battery pack
@@ -213,7 +201,7 @@ The rover is powered from a 2S 18650 battery pack. 2S lithium-ion battery pack p
 
 ## Assembly Instructions
 
-These are approximate instructions for assembling the current prototype. The design was adjusted and reprinted several times during the build, so test-fit every printed part before using glue and check the completed CAD model if a part's orientation is unclear.
+Note that these are approximate instructions for replicating the rover. Tolerances across printers vary and reprinting may be required with custom slicer settings.
 
 ### Parts and Tools
 
@@ -331,6 +319,3 @@ When you toggle the robot's power button, the autonomous sequence will run autom
 * `SOURCE CAD` - CAD step files for building it yourself
 * `Pictures` - All pictures of schematic/prototype/cad
 
-## License
-
-This project is licensed under the [MIT License](LICENSE). Copyright (c) 2026 Aditya Verma.

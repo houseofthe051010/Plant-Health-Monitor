@@ -46,7 +46,25 @@ Sensors include a BH1750 light sensor, a BME280 environmental sensor, an HC-SR04
 ## Bill of materials
 
 
-Look at BOM CSV
+| Category    |  Quantity | Part                  | Purchase Link                                                      |                    Estimated Price |
+| ----------- | --------: | --------------------- | ------------------------------------------------------------------ | ---------------------------------: |
+| Electronics |         1 | ESP32                 | [AliExpress](https://www.aliexpress.us/item/3256812360578716.html) |                              $4.67 |
+| Actuator    |         2 | MG996                 | [AliExpress](https://www.aliexpress.us/item/3256804365417662.html) |                              $9.28 |
+| Actuator    |         1 | MG996 180 Degree      | [AliExpress](https://www.aliexpress.us/item/3256804365417662.html) |                              $4.64 |
+| Actuator    |         5 | SG90                  | [AliExpress](https://www.aliexpress.us/item/3256806107378152.html) |                              $4.95 |
+| Sensor      |         1 | Ambient light sensor  | [AliExpress](https://www.aliexpress.us/item/3256809513329235.html) |                              $3.00 |
+| Sensor      |         1 | Environmental sensor  | [AliExpress](https://www.aliexpress.us/item/3256812547404758.html) |                              $5.85 |
+| Sensor      |         1 | Ultrasonic sensor     | [AliExpress](https://www.aliexpress.us/item/3256810017345486.html) |                              $1.25 |
+| Sensor      |         1 | Soil EC sensor        | [AliExpress](https://www.aliexpress.us/item/3256811685769454.html) |                             $13.29 |
+| Power       |         1 | Buck converter        | [AliExpress](https://www.aliexpress.us/item/3256806558389509.html) |                              $1.46 |
+| Power       |         2 | 18650 cell            | [AliExpress](https://www.aliexpress.us/item/3256811867524654.html) |     $3.35 (2 of 16-pack at $26.77) |
+| Power       |         1 | 2S battery holder     | [AliExpress](https://www.aliexpress.us/item/3256809135366720.html) |                              $0.99 |
+| Power       |         1 | Power switch          | [AliExpress](https://www.aliexpress.us/item/3256807619399290.html) | $0.16 used (1 of 10-pack at $1.64) |
+| Power       |         1 | 2S battery charger    | [AliExpress](https://www.aliexpress.us/item/3256805668198456.html) |                              $0.99 |
+| Mechanical  |         5 | Ball bearing          | [AliExpress](https://www.aliexpress.us/item/3256805609422387.html) |                     $8.06 (5-pack) |
+| Mechanical  | As needed | M3 fasteners          | [AliExpress](https://www.aliexpress.us/item/3256809672273859.html) |              $14.88 assortment kit |
+| Fabricated  | As needed | 3D filament allowance | [AliExpress](https://www.aliexpress.us/item/3256806989098121.html) |                              $3.00 |
+
 
 ## GPIO Mapping (needed for final wiring)
 

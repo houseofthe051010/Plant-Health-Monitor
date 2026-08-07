@@ -170,7 +170,7 @@ Seven servos in rover.
 
 ### Parts and Tools
 
-Print all of the parts in [`SOURCE CAD/Individual STLs`](SOURCE%20CAD/Individual%20STLs) using the [recommended print settings](SOURCE%20CAD/README.md).
+Print all of the parts in [`CAD/Individual STLs`](CAD/Individual%20STLs) using the [recommended print settings](CAD/README.md).
 
 * I strongly recommend getting the assembly and viewing it in order to accurately follow along with replicating this
 
@@ -180,25 +180,25 @@ Print all of the parts in [`SOURCE CAD/Individual STLs`](SOURCE%20CAD/Individual
 
 ### 2. Assemble the Base and Drivetrain
 
-1. Begin with [`base_structure.stl`](SOURCE%20CAD/Individual%20STLs/base_structure.stl), the large base.
-2. Install [`front_wheel_hinge.stl`](SOURCE%20CAD/Individual%20STLs/front_wheel_hinge.stl) onto the singular hole for the base, then fit a 608 bearing and [`front_caster_wheel.stl`](SOURCE%20CAD/Individual%20STLs/front_caster_wheel.stl) into the caster.
+1. Begin with [`base_structure.stl`](CAD/Individual%20STLs/base_structure.stl), the large base.
+2. Install [`front_wheel_hinge.stl`](CAD/Individual%20STLs/front_wheel_hinge.stl) onto the singular hole for the base, then fit a 608 bearing and [`front_caster_wheel.stl`](CAD/Individual%20STLs/front_caster_wheel.stl) into the caster.
 
 ### 3. Build the Arm Yaw and Main Pitch Axes
 
-1. Attach [`arm_yaw_servo_horn_attachment.stl`](SOURCE%20CAD/Individual%20STLs/arm_yaw_servo_horn_attachment.stl) to the centered SG90 horn using m3 screws. use 608 on opposite side of the axis, press fit but use super glue if necessary.
-2. Secure [`arm_yaw_servo_holder.stl`](SOURCE%20CAD/Individual%20STLs/arm_yaw_servo_holder.stl) with M3s.
-3. Fit [`arm_pitch_adapter.stl`](SOURCE%20CAD/Individual%20STLs/arm_pitch_adapter.stl) onto the rod for the yaw servo holder
-4. Install the MG996 in [`arm_pitch_servo_holder.stl`](SOURCE%20CAD/Individual%20STLs/arm_pitch_servo_holder.stl) using m3 screws on the slots given for the arm pitch adapter.
+1. Attach [`arm_yaw_servo_horn_attachment.stl`](CAD/Individual%20STLs/arm_yaw_servo_horn_attachment.stl) to the centered SG90 horn using m3 screws. use 608 on opposite side of the axis, press fit but use super glue if necessary.
+2. Secure [`arm_yaw_servo_holder.stl`](CAD/Individual%20STLs/arm_yaw_servo_holder.stl) with M3s.
+3. Fit [`arm_pitch_adapter.stl`](CAD/Individual%20STLs/arm_pitch_adapter.stl) onto the rod for the yaw servo holder
+4. Install the MG996 in [`arm_pitch_servo_holder.stl`](CAD/Individual%20STLs/arm_pitch_servo_holder.stl) using m3 screws on the slots given for the arm pitch adapter.
 
 ### 4. Add the Second Pitch Joint and Tool Output
 
 1. Place a 608 bearing on the opposite side of the joint.
-2. Attach either the two-part output made from [`arm_output_attachment_part1.stl`](SOURCE%20CAD/Individual%20STLs/arm_output_attachment_part1.stl) and [`arm_output_attachment_part2.stl`](SOURCE%20CAD/Individual%20STLs/arm_output_attachment_part2.stl), or use [`arm_output_shovel_attachment.stl`](SOURCE%20CAD/Individual%20STLs/arm_output_shovel_attachment.stl) for the soil-shovel configuration.
+2. Attach either the two-part output made from [`arm_output_attachment_part1.stl`](CAD/Individual%20STLs/arm_output_attachment_part1.stl) and [`arm_output_attachment_part2.stl`](CAD/Individual%20STLs/arm_output_attachment_part2.stl), or use [`arm_output_shovel_attachment.stl`](CAD/Individual%20STLs/arm_output_shovel_attachment.stl) for the soil-shovel configuration.
 
 ### 5. Install the Soil Container and Lid
 
-1. Put [`Soil_container.stl`](SOURCE%20CAD/Individual%20STLs/Soil_container.stl) behind the arm using included tapping screws.
-2. Attach an SG90 horn to [`Soil_container_lid.stl`](SOURCE%20CAD/Individual%20STLs/Soil_container_lid.stl), then attach the horn to servo.
+1. Put [`Soil_container.stl`](CAD/Individual%20STLs/Soil_container.stl) behind the arm using included tapping screws.
+2. Attach an SG90 horn to [`Soil_container_lid.stl`](CAD/Individual%20STLs/Soil_container_lid.stl), then attach the horn to servo.
 
 ### 6. Wiring
 

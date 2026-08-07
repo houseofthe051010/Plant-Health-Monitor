@@ -212,13 +212,13 @@ Print all of the parts in [`CAD/Individual STLs`](CAD/Individual%20STLs) using t
 8. Place the temp/humidity + EC sensor in the container
 9. Place the light sensor in an open spot on the robot
 10. Place the ultrasonic on the front center of the robot, stabilize using hot glue
-12. Wire everything to the 3.3v rail or 5v rail (if applicable) of the esp32.
-13. Wire everything else according to PINOUT diagram for sensors.
+11. Wire everything to the 3.3v rail or 5v rail (if applicable) of the esp32.
+12. Wire everything else according to PINOUT diagram for sensors.
 
 ## Setting Up Firmware
 
 1. Use [Thonny](https://thonny.org/)
 2. Use [Getting Started with Thonny MicroPython guide for ESP32 and ESP8266](https://randomnerdtutorials.com/getting-started-thonny-micropython-python-ide-esp32-esp8266/) to learn how to connect your ESP32 and upload code to it.
-3. Connect ESP32 to computer and upload `main.py` to the ESP32, and save it on the board as `main.py`.
+3. Connect ESP32 to computer and upload [`main.py`](SOURCE%20CODE/main.py) to the ESP32, and save it on the board as `main.py`.
 
 

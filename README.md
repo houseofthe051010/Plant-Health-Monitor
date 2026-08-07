@@ -182,6 +182,7 @@ Print all of the parts in [`CAD/Individual STLs`](CAD/Individual%20STLs) using t
 
 1. Begin with [`base_structure.stl`](CAD/Individual%20STLs/base_structure.stl), the large base.
 2. Install [`front_wheel_hinge.stl`](CAD/Individual%20STLs/front_wheel_hinge.stl) onto the singular hole for the base, then fit a 608 bearing and [`front_caster_wheel.stl`](CAD/Individual%20STLs/front_caster_wheel.stl) into the caster.
+3. Install the 2 MG996 motors for the drivetrain in their slots beneath the base, secure using M3 screws and hot glue if needed.
 
 ### 3. Build the Arm Yaw and Main Pitch Axes
 

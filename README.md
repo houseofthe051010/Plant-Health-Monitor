@@ -1,7 +1,7 @@
 # ESP32 Plant Health Monitor Rover
 
 
-I built this to sample soil health from my garden and this is just a prototype, not the real version yet, I will build another iteration but this is what I have currently. It is a fun educational toy to play with though.
+I built this to sample soil health from my garden to help plnat growth. This is just a prototype, not a reliable version yet, I will build another iteration but this is what I have currently. It is a fun educational toy to play with though.
 
 ## Features
 
@@ -167,7 +167,9 @@ Seven servos in rover.
 
 ### Parts and Tools
 
-Print all of the parts in [`SOURCE CAD/Individual Parts`](SOURCE%20CAD/Individual%20Parts).
+Print all of the parts in [`SOURCE CAD/Individual STLs`](SOURCE%20CAD/Individual%20STLs) using the [recommended print settings](SOURCE%20CAD/README.md).
+
+* I strongly recommend getting the assembly and viewing it in order to accurately follow along with replicating this
 
 ### 1. Print and Prepare the Parts
 
@@ -175,25 +177,25 @@ Print all of the parts in [`SOURCE CAD/Individual Parts`](SOURCE%20CAD/Individua
 
 ### 2. Assemble the Base and Drivetrain
 
-1. Begin with [`base_structure.stl`](SOURCE%20CAD/Individual%20Parts/base_structure.stl), the large base.
-2. Install [`front_wheel_hinge.stl`](SOURCE%20CAD/Individual%20Parts/front_wheel_hinge.stl), then fit a 608 bearing and [`front_caster_wheel.stl`](SOURCE%20CAD/Individual%20Parts/front_caster_wheel.stl) into the caster.
+1. Begin with [`base_structure.stl`](SOURCE%20CAD/Individual%20STLs/base_structure.stl), the large base.
+2. Install [`front_wheel_hinge.stl`](SOURCE%20CAD/Individual%20STLs/front_wheel_hinge.stl), then fit a 608 bearing and [`front_caster_wheel.stl`](SOURCE%20CAD/Individual%20STLs/front_caster_wheel.stl) into the caster.
 
 ### 3. Build the Arm Yaw and Main Pitch Axes
 
-1. Attach [`arm_yaw_servo_horn_attachment.stl`](SOURCE%20CAD/Individual%20Parts/arm_yaw_servo_horn_attachment.stl) to the centered SG90 horn. use 608 on opposite side of the axis.
-2. Secure [`arm_yaw_servo_holder.stl`](SOURCE%20CAD/Individual%20Parts/arm_yaw_servo_holder.stl) with M3s.
-3. Fit [`arm_pitch_adapter.stl`](SOURCE%20CAD/Individual%20Parts/arm_pitch_adapter.stl)
-4. Install the MG996 in [`arm_pitch_servo_holder.stl`](SOURCE%20CAD/Individual%20Parts/arm_pitch_servo_holder.stl) 
+1. Attach [`arm_yaw_servo_horn_attachment.stl`](SOURCE%20CAD/Individual%20STLs/arm_yaw_servo_horn_attachment.stl) to the centered SG90 horn. use 608 on opposite side of the axis.
+2. Secure [`arm_yaw_servo_holder.stl`](SOURCE%20CAD/Individual%20STLs/arm_yaw_servo_holder.stl) with M3s.
+3. Fit [`arm_pitch_adapter.stl`](SOURCE%20CAD/Individual%20STLs/arm_pitch_adapter.stl)
+4. Install the MG996 in [`arm_pitch_servo_holder.stl`](SOURCE%20CAD/Individual%20STLs/arm_pitch_servo_holder.stl) 
 
 ### 4. Add the Second Pitch Joint and Tool Output
 
 1. Place a 608 bearing on the opposite side of the joint.
-2. Attach either the two-part output made from [`arm_output_attachment_part1.stl`](SOURCE%20CAD/Individual%20Parts/arm_output_attachment_part1.stl) and [`arm_output_attachment_part2.stl`](SOURCE%20CAD/Individual%20Parts/arm_output_attachment_part2.stl), or use [`arm_output_shovel_attachment.stl`](SOURCE%20CAD/Individual%20Parts/arm_output_shovel_attachment.stl) for the soil-shovel configuration.
+2. Attach either the two-part output made from [`arm_output_attachment_part1.stl`](SOURCE%20CAD/Individual%20STLs/arm_output_attachment_part1.stl) and [`arm_output_attachment_part2.stl`](SOURCE%20CAD/Individual%20STLs/arm_output_attachment_part2.stl), or use [`arm_output_shovel_attachment.stl`](SOURCE%20CAD/Individual%20STLs/arm_output_shovel_attachment.stl) for the soil-shovel configuration.
 
 ### 5. Install the Soil Container and Lid
 
-1. Put [`Soil_container.stl`](SOURCE%20CAD/Individual%20Parts/Soil_container.stl) behind the arm.
-2. Attach an SG90 horn to [`Soil_container_lid.stl`](SOURCE%20CAD/Individual%20Parts/Soil_container_lid.stl), then attach the horn to servo.
+1. Put [`Soil_container.stl`](SOURCE%20CAD/Individual%20STLs/Soil_container.stl) behind the arm.
+2. Attach an SG90 horn to [`Soil_container_lid.stl`](SOURCE%20CAD/Individual%20STLs/Soil_container_lid.stl), then attach the horn to servo.
 
 ### 6. Wiring
 

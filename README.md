@@ -14,6 +14,7 @@ I built this to sample soil health from my garden to help plnat growth. This is 
 * Soil electrical conductivity measurement
 * Temperature, humidity, pressure, and light measurements
 * Ultrasound distance measurement
+* Blackbox sensor data logging onboard esp32 flash
 
 
 ## Proof Pictures
@@ -42,6 +43,8 @@ https://www.youtube.com/shorts/W9_TdJyh92A
 The rover utilizes ESP32 microcontroller. Tank drive is controlled using two PWM outputs, acting as continuous-rotation servos. Soil collection uses five additional PWM outputs to actuate servos of the arm and close the sample chamber.
 
 Sensors include a BH1750 light sensor, a BME280 environmental sensor, an HC-SR04 ultrasound distance sensor, and an analog soil electrical conductivity sensor. Both BH1750 and BME280 are on the same I2C bus.
+
+All the hardware data is logged to the ESP32's internal micropython filesystem and can be exported over USB.
 
 ## Bill of materials
 
@@ -178,14 +181,14 @@ Print all of the parts in [`SOURCE CAD/Individual STLs`](SOURCE%20CAD/Individual
 ### 2. Assemble the Base and Drivetrain
 
 1. Begin with [`base_structure.stl`](SOURCE%20CAD/Individual%20STLs/base_structure.stl), the large base.
-2. Install [`front_wheel_hinge.stl`](SOURCE%20CAD/Individual%20STLs/front_wheel_hinge.stl), then fit a 608 bearing and [`front_caster_wheel.stl`](SOURCE%20CAD/Individual%20STLs/front_caster_wheel.stl) into the caster.
+2. Install [`front_wheel_hinge.stl`](SOURCE%20CAD/Individual%20STLs/front_wheel_hinge.stl) onto the singular hole for the base, then fit a 608 bearing and [`front_caster_wheel.stl`](SOURCE%20CAD/Individual%20STLs/front_caster_wheel.stl) into the caster.
 
 ### 3. Build the Arm Yaw and Main Pitch Axes
 
-1. Attach [`arm_yaw_servo_horn_attachment.stl`](SOURCE%20CAD/Individual%20STLs/arm_yaw_servo_horn_attachment.stl) to the centered SG90 horn. use 608 on opposite side of the axis.
+1. Attach [`arm_yaw_servo_horn_attachment.stl`](SOURCE%20CAD/Individual%20STLs/arm_yaw_servo_horn_attachment.stl) to the centered SG90 horn using m3 screws. use 608 on opposite side of the axis, press fit but use super glue if necessary.
 2. Secure [`arm_yaw_servo_holder.stl`](SOURCE%20CAD/Individual%20STLs/arm_yaw_servo_holder.stl) with M3s.
-3. Fit [`arm_pitch_adapter.stl`](SOURCE%20CAD/Individual%20STLs/arm_pitch_adapter.stl)
-4. Install the MG996 in [`arm_pitch_servo_holder.stl`](SOURCE%20CAD/Individual%20STLs/arm_pitch_servo_holder.stl) 
+3. Fit [`arm_pitch_adapter.stl`](SOURCE%20CAD/Individual%20STLs/arm_pitch_adapter.stl) onto the rod for the yaw servo holder
+4. Install the MG996 in [`arm_pitch_servo_holder.stl`](SOURCE%20CAD/Individual%20STLs/arm_pitch_servo_holder.stl) using m3 screws on the slots given for the arm pitch adapter.
 
 ### 4. Add the Second Pitch Joint and Tool Output
 
@@ -194,13 +197,23 @@ Print all of the parts in [`SOURCE CAD/Individual STLs`](SOURCE%20CAD/Individual
 
 ### 5. Install the Soil Container and Lid
 
-1. Put [`Soil_container.stl`](SOURCE%20CAD/Individual%20STLs/Soil_container.stl) behind the arm.
+1. Put [`Soil_container.stl`](SOURCE%20CAD/Individual%20STLs/Soil_container.stl) behind the arm using included tapping screws.
 2. Attach an SG90 horn to [`Soil_container_lid.stl`](SOURCE%20CAD/Individual%20STLs/Soil_container_lid.stl), then attach the horn to servo.
 
 ### 6. Wiring
 
 1. Refer to the pinout tables above
 2. Wire in a way so the wire goes down the arm and motors don't get jammed.
+3. Use 18650 battery holders (or solder the batteries for a 2S config)
+4. Wire up to a switch
+5. Wire to the XL4005
+6. Configure at 5.8V
+7. Use the XL4005 output rail to power the esp32, and all servos.
+8. Place the temp/humidity + EC sensor in the container
+9. Place the light sensor in an open spot on the robot
+10. Place the ultrasonic on the front center of the robot, stabilize using hot glue
+12. Wire everything to the 3.3v rail or 5v rail (if applicable) of the esp32.
+13. Wire everything else according to PINOUT diagram for sensors.
 
 ## Setting Up Firmware
 
